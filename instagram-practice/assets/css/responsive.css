@@ -1,0 +1,634 @@
+/*  12.0 ===== Medias/Responsive =====   */
+
+/*
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@media only screen and (max-width: 1299px) {
+
+    h1.entry-title {
+        font-size: 40px;
+    }
+    .slick-prev {
+        left: 0px;
+    }
+    .slick-next {
+        right: 12px;
+    }
+    .row {
+        margin-left: 6px;
+    }
+    .site-footer .widget ul li {
+        margin: 0 14px;
+    }
+    .site-generator {
+        padding: 25px 28px 29px;
+    }
+    .footer-bottom-img .inline-social-icons{
+        padding: 0 25px;
+    }
+
+}
+
+/* All Tablet Portrait size smaller than standard 1199 (devices and browsers) */
+
+@media only screen and (max-width: 1200px) {
+    .site-branding {
+        width: 150px;
+    }
+    .site-branding img {
+        max-width: 150px;
+    }
+    .hgroup-wrapper .navbar {
+        width: calc(100% - 150px);
+    }
+    h2.banner-title {
+        font-size: 30px;
+    }
+    .banner-section .entry-header {
+        padding-left: 50px;
+    }
+    .btn-primary, .btn-secondary {
+        margin-top: 20px;
+    }
+    .sub-title {
+        margin: 45px 50px;
+    }
+    .image-slider .image-content figure {
+        width: 246px;
+    }
+    .why-choose-us .text-content{
+        gap: 110px 500px;
+        grid-template-columns: calc(50% - 250px) calc(50% - 250px);
+    }
+    .image-slider-container::before {
+        width: 330px;
+        height: 330px;
+    }
+    .image-slider-container::after {
+        width: 450px;
+        height: 450px;
+    }
+    .rounded-box {
+        width: 100px;
+        height: 100px;
+        line-height: 79px;
+        font-size: 40px;
+    }
+    .download-info-section .download-info-wrap {
+        padding: 81px 40px;
+    }
+    h3.entry-title {
+        font-size: 30px;
+    }
+    .custom-col-1, .custom-col-2, .custom-col-3, .custom-col-4, .custom-col-5, .custom-col-6, .custom-col-7, .custom-col-8, .custom-col-9, .custom-col-10, .custom-col-11, .custom-col-12 {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .site-footer .widget-area {
+        padding: 80px 30px 10px;
+    }
+    .site-footer .widget-title {
+        font-size: 29px;
+    }
+    .widget-btn-wrapper .box-button {
+        margin: 0 15px;
+    }
+    .site-footer .widget ul li {
+        margin: 0 6px;
+        font-size: 14px;
+    }
+    .footer-bottom-img .inline-social-icons {
+        padding: 0px;
+    }
+}
+
+/* All Tablet Portrait size smaller than standard 1023 (devices and browsers) */
+
+@media only screen and (max-width: 1023px) {
+    /* mean menu css */
+    .mean-container .meanmenu-reveal span, .mean-container .meanmenu-reveal span:before, .mean-container .meanmenu-reveal span:after{
+        background: var(--white);
+    }
+    .mean-container .mean-nav>ul{
+        top: 85%;
+        left: 0;
+        background: rgb(9 70 107 / 80%) none repeat scroll 0 0;
+        width: 100%;
+        margin: 0;
+    }
+    .main-navigation ul ul {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform-origin: none;
+        transition: all 0s ease 0s;
+        -webkit-transition: all 0s ease 0s;
+        -moz-transition: all 0s ease 0s;
+        -o-transition: all 0s ease 0s;
+        margin: 0;
+        position: static;
+        top: 0px;
+        white-space: none;
+        z-index: 999;
+        background: #fff;
+        min-width: 100%;
+        box-shadow: none;
+    }
+    
+    .mean-container .mean-nav ul li a.mean-expand:hover {
+        background: none;
+    }
+    .mean-container .mean-nav ul li a.mean-expand.mean-clicked::before {
+        content: "";
+    }
+    .mean-container .mean-nav>ul>li:first-child a {
+        border-top: none;
+    }
+    .mean-container .mean-nav ul li {
+        margin: 0;
+    }
+    .main-navigation ul li:hover ul {
+        transform: unset;
+    }
+    .menu-item-has-children::before, .submenu-has-children::before{
+        display: none;
+        
+    }  
+    .widget-btn-wrapper .box-button:first-child {
+        margin-left: -16px;
+    }
+    .site-footer .widget ul li {
+        font-size: 13px;
+    }
+    .inline-social-icons li a{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .banner-section{
+        padding-top: 0;
+
+    }
+    .banner-section .banner-content{
+        display: block;
+    }
+    .banner-section .entry-header{
+        text-align: center;
+    }
+    .btn-primary{
+        margin-left: -104px;
+    }
+    .features-section .features-box{
+        display: flex;
+        width: 100%;
+    }
+    .features-section .features-box:not(:last-child){
+        border: none;
+    }
+    .features-section .features-wrap {
+        padding: 50px 34px;
+    }
+    .why-choose-us .text-content {
+        gap: 40px 60px;
+        grid-template-columns: calc(50% - 30px) calc(50% - 30px);
+    }
+    .image-slider-container {
+        position: relative;
+        width: 80%;
+        margin-top: 40px;
+    }
+    .image-slider .image-content figure {
+        width: 220px;
+    }
+    .download-info-section .info-content{
+        display: block;
+    }
+    .download-info-section .download-info-wrap{
+        text-align: center;
+    }
+    .process-item {
+        display: block;
+        text-align: center;
+    } 
+    .tutorial-section .btn-primary {
+        margin-left: 0;
+    }
+    .pricing-plans-section .custom-col-3{
+        width: calc(50% - 40px);
+        margin: 10px 20px;
+
+    }
+    .footer-address-wrap li {
+        padding: 47px 29px 37px 51px;
+        font-size: 14px;
+    }
+    .footer-address-wrap li i{
+        left: 11px;
+    }
+    .footer-address-wrap ul {
+        margin: 0;
+    }
+    .custom-col-6 {
+        width: 60%;
+    }
+    .widget-btn-wrapper .box-button {
+        padding: 11px 26px 13px 53px;
+    }
+    .widget-btn-wrapper .box-button i{
+        top: 5px;
+        right: 69%;
+    }
+    .site-footer input {
+        width: 79%;
+    }
+    .site-footer .footer-form p::before {
+        right: 88px;
+    }
+    .site-footer .footer-form p {
+        margin-top: 10px;
+    }
+    .site-generator {
+        font-size: 12px;
+    }
+    .footer-bottom-img {
+        right: 2%;
+        max-width: 40%;
+        bottom: -7px;
+    }
+
+
+
+
+}
+
+/* All Mobile Portrait size smaller than 768 (devices and browsers) */
+
+@media only screen and (max-width: 767px) {
+    .btn-primary {
+        margin-left: -28px;
+    }
+    .site-content .features-section {
+        margin-top: -61px;
+    }
+    .image-slider-container::after {
+        width: 400px;
+        height: 400px;
+        left: -15px;
+    }
+    .image-slider .image-content figure {
+        width: 205px;
+    }
+    .tutorial-section .entry-title{
+        font-size: 25px;
+    }
+    .tutorial-section .btn-primary{
+        padding: 10px 45px 13px 6px;
+
+    }
+    .tutorial-section .btn-primary::before{
+    width: 30px;
+    height: 30px;
+    }
+    h3.entry-title {
+        font-size: 27px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .review-section {
+        padding: 188px 0 125px 0;
+    }
+    .review-section .review-content-wrap {
+        width: 400px;
+    }
+    .pricing-plans-section .price-tag {
+        font-size: 30px;
+    }
+    .pricing-plans-section .limited-access {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .pricing-plans-section li {
+        font-size: 11px;
+    }
+    .plans-content-wrap .btn-secondary {
+        margin-top: 13px;
+        left: -8px;
+    }
+    .footer-address-info {
+        padding: 25px 45px 20px;
+    }
+    .footer-address-wrap li {
+        width: 100%;
+        border-right: none;
+        padding: 46px 16px 13px 75px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    }
+    .custom-col-6 {
+        width: 100%;
+    }
+    .site-generator {
+        font-size: 14px;
+    }
+    .footer-bottom-img {
+        right: -24%;
+        max-width: 50%;
+        bottom: -5px;
+        position: relative;
+    }
+    
+
+   
+
+}
+@media only screen and (max-width: 575px){
+    #page {
+        padding: 30px;
+    }
+    .banner-section .entry-header {
+        padding-left: 11px;
+    }
+    h2.banner-title {
+        font-size: 21px;
+    }
+    .banner-section, .functionality-section .btn-banner {
+        background-color: var(--btn-banner-before);
+    }
+    .btn-primary {
+        margin-left: -9px;
+    }
+    .btn-primary, .btn-secondary {
+        margin-top: 11px;
+    }
+    .banner-section .banner-img {
+        padding-left: 100px;
+        margin-top: 15px;
+    }
+    .site-content .features-section {
+        margin-top: 0px;
+    }
+    .features-section .features-img {
+        width: 100px;
+    }
+    h4.entry-title {
+        font-size: 16px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .sub-title {
+        font-size: 15px;
+    }
+    .image-slider-container::before {
+        width: 280px;
+        height: 280px;
+        left: -37px;
+    }
+    .image-slider-container::after {
+        width: 350px;
+        height: 350px;
+        left: -33px;
+    }
+    .image-slider .image-content figure {
+        width: 192px;
+        margin-left: 54px;
+    }
+    .custom-arrows {
+        margin-top: 42px;
+    }
+    .custom-arrows .prev-arrow {
+        left: -26px;
+    }
+    .custom-arrows .next-arrow {
+        right: 19px;
+    }
+    .why-choose-us-wrap {
+        margin: 25px auto;
+    }
+    .download-info-section .download-info-wrap {
+        display: block;
+    }
+    h3.entry-title {
+        font-size: 35px;
+    }
+    .download-info-section p {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    .tutorial-section .entry-header {
+        top: 23%;
+        left: 49%;
+    }
+    .tutorial-section .entry-title {
+        font-size: 23px;
+        font-weight: 900;
+    }
+    .review-section {
+        padding: 100px 0 100px 0;
+        margin-top: -37px;
+    }
+    h2.entry-title {
+        font-size: 31px;
+    }
+    .review-section .review-content-wrap {
+        width: 297px;
+    }
+    .review-section .user-img{
+        left: 37%;
+
+    }
+    .pricing-plans-section .custom-col-3 {
+        width: 100%;
+        margin: 10px -10px;
+        padding: 20px;
+    }
+    .plans-content-wrap h3.entry-title {
+        font-size: 49px;
+    }
+    .pricing-plans-section .price-tag {
+        font-size: 43px;
+    }
+    .pricing-plans-section .limited-access {
+        font-size: 27px;
+    }
+    .pricing-plans-section li {
+        font-size: 17px;
+    }
+    .plans-content-wrap .btn-secondary {
+        margin-top: 13px;
+        left: -8px;
+        font-size: 19px;
+    }
+    .site-footer .widget-title {
+        font-size: 27px;
+    }
+    .widget-btn-wrapper .box-button:first-child {
+        margin-left: 0px;
+    }
+    .widget-btn-wrapper .box-button {
+        padding: 11px 19px 13px 49px;
+        margin: 0 10px;
+    }
+    .widget-btn-wrapper .box-button i {
+        top: 10px;
+        right: 70%;
+        height: 35px;
+        width: 35px;
+        padding: 6px 0px 6px;
+    }
+    .site-footer .widget ul li {
+        font-size: 12px;
+        margin: 0 6px;
+    }
+    .site-generator {
+        font-size: 13px;
+    }
+    .footer-bottom-img {
+        max-width: 55%;
+    }
+
+
+}
+/* All Mobile size smaller than standard 479 (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    #page {
+        padding: 15px;
+    }
+    .mean-container .meanmenu-reveal span{
+        width: 23px;
+    }
+    .banner-section .entry-header {
+        padding-left: 0px;
+    }
+    h2.banner-title {
+        font-size: 19px;
+    }
+    .site-content .features-section {
+        margin-top: -29px;
+    }
+    .why-choose-us .text-content {
+        display: block;
+    }
+    .why-choose-us .text-item:nth-child(odd) {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .why-choose-us .text-item:nth-child(even) {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .image-slider .image-content figure {
+        width: 156px;
+        margin-left: 42px;
+    }
+    .image-slider-container::before {
+        width: 230px;
+        height: 230px;
+        left: 3px;
+    }
+    .image-slider-container::after {
+        width: 280px;
+        height: 280px;
+        left: -21px;
+    }
+    .custom-arrows button{
+        height: 30px;
+        width: 30px;
+    }
+    .custom-arrows button::before{
+        width: 40px;
+        height: 40px;
+        left: -5px;
+    }
+    .custom-arrows .prev-arrow {
+        left: -6px;
+    }
+    .custom-arrows .next-arrow {
+        right: -16px;
+    }
+    .custom-col-4 {
+        width: 100%;
+    }
+    .tutorial-section {
+        bottom: -68px;
+        padding: 0 15px;
+    }
+    .tutorial-section .entry-title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .tutorial-section .btn-primary {
+        padding: 6px 35px 6px 6px;
+        font-size: 11px;
+    }
+    .tutorial-section .btn-primary::before {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    h2.entry-title {
+        font-size: 25px;
+    }
+    .review-section p {
+        font-size: 12px;
+        margin: 9px;
+    }
+    .box-button{
+        font-size: 11px;
+    }
+    .site-footer .widget-area {
+        padding: 40px 21px 1px;
+    }
+    .widget-btn-wrapper .box-button {
+        padding: 6px 11px 10px 43px;
+        margin: 0 -6px;
+    }
+    .widget-btn-wrapper .box-button i{
+        font-size: 17px;
+        height: 30px;
+        width: 30px;
+        top: 5px;
+    }
+    .widget-btn-wrapper .box-button:first-child {
+        margin-left: -5px;
+        margin-right: 9px;
+    }
+    .site-footer .footer-form p {
+        width: 291px;
+    }
+    .site-footer .footer-form p::before {
+        right: 72px;
+        top: 5px;
+    }
+    .footer-bottom-img {
+        max-width: 70%;
+        right: -15%;
+    }
+    .inline-social-icons li, .widget .inline-social-icons li {
+        margin: 0 7px;
+    }
+    .back-to-top a {
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        width: 20px;
+    }
+}

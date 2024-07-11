@@ -1,0 +1,426 @@
+/*  12.0 ===== Medias/Responsive =====   */
+
+/*
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@media only screen and (max-width: 1299px) {
+
+    h1.entry-title {
+        font-size: 40px;
+    }
+
+}
+
+/* All Tablet Portrait size smaller than standard 1199 (devices and browsers) */
+
+@media only screen and (max-width: 1200px) {
+    .site-branding {
+        width: 150px;
+    }
+    .site-branding img {
+        max-width: 150px;
+    }
+    .hgroup-wrapper .navbar {
+        width: calc(100% - 150px);
+    }
+    .team-info-section img {
+        transform: scale(1.6);
+    }
+
+
+}
+
+/* All Tablet Portrait size smaller than standard 1023 (devices and browsers) */
+
+@media only screen and (max-width: 1023px) {
+
+    /* removing menu css in responsive */
+    .main-navigation ul ul {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform-origin: none;
+        transition: all 0s ease 0s;
+        -webkit-transition: all 0s ease 0s;
+        -moz-transition: all 0s ease 0s;
+        -o-transition: all 0s ease 0s;
+        margin: 0;
+        position: static;
+        top: 0px;
+        white-space: none;
+        z-index: 999;
+        background: #fff;
+        min-width: 100%;
+        box-shadow: none;
+    }
+
+    .main-navigation li li{
+        border-bottom: none;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    /* mean menu css */
+    .mean-container .meanmenu-reveal span, .mean-container .meanmenu-reveal span:before, .mean-container .meanmenu-reveal span:after{
+        background: #007FAC;
+    }
+    .mean-container .mean-nav>ul{
+        top: 85%;
+        left: 0;
+        background: rgb(9 70 107 / 80%) none repeat scroll 0 0;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .mean-container .mean-nav ul li a.mean-expand:hover {
+        background: none;
+    }
+    .mean-container .mean-nav ul li a.mean-expand.mean-clicked::before {
+        content: "";
+    }
+    .mean-container .mean-nav>ul>li:first-child a {
+        border-top: none;
+    }
+    .mean-container .mean-nav ul li {
+        margin: 0;
+    }
+    .main-navigation ul li:hover ul {
+        transform: unset;
+    }
+    .first-level-child::before, .second-level-child::before{
+        display: none;
+        
+    }
+    p{
+        font-size: 15px;
+    }
+    h1.entry-title {
+        font-size: 35px;
+    }
+    
+   
+    .about-company-section .company-info {
+        font-size: 15px;
+    }
+    .innovation-section .info-box {
+        width: 30.33%;
+    }
+    h2.entry-title {
+        font-size: 45px;
+    }
+   
+    .advertisement-section .advertisement-content-wrap {
+        max-width: 415px;
+    }
+    .industries-item-wrap .post .entry-title a {
+        font-size: 25px;
+    }
+    .contact-us-section .info-detail a {
+        font-size: 26px;
+    }
+    .site-footer .widget-title {
+        font-size: 20px;
+    }
+    .site-header .header-info li:not(:last-child)::before {
+        right: 12px;
+        font-size: 24px;
+        height: 34px;
+    }
+    .analytics-content {
+        grid-template-columns: 100%;
+    }
+    .data-analytics-section .featured-img {
+        max-width: 648px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+
+
+}
+
+/* All Mobile Portrait size smaller than 768 (devices and browsers) */
+
+@media only screen and (max-width: 767px) {
+    .site-header .inline-social-icons {
+        width: 210px;
+    }
+    .site-header .header-info {
+        width: calc(100% - 210px);
+        padding-left: 0px;
+        font-size: 11px;
+    }
+    .site-header .header-info li {
+        padding: 13px;
+    }
+    .site-header .header-info li:not(:last-child)::before {
+        right: -5px;
+        font-size: 11px;
+        height: 14px;
+    }
+    .site-branding {
+        width: 100px;
+    }
+    .site-branding img {
+        max-width: 100px;
+    }
+    .hgroup-wrapper .navbar {
+        width: calc(100% - 100px);
+    }
+    .banner-section{
+        padding: 110px 0 220px 0;
+        background-position: center;
+    }
+
+    .about-company-section .company-logo {
+        width: 150px;
+    }
+    .about-company-section .company-info {
+        width: calc(100% - 150px);
+    }
+    h2.entry-title {
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+    .innovation-section .info-box {
+        width: 100%;
+    }
+    .advertisement-section .advertisement-content-wrap {
+        max-width: 305px;
+    }
+    .custom-col-4 {
+        width: 50%;
+    }
+    h3.entry-title {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 575px){
+
+    .top-header-wrapper .container {
+        display: inline;
+    }
+    .top-header-wrapper .container>div:first-child {
+        text-align: center;
+    }
+    .site-header .inline-social-icons {
+        width: 100%;
+    }
+    .site-header .header-info {
+        width: 100%;
+        font-size: 15px;
+        line-height: 0;
+        background: #313131;
+        text-align: center;
+        position: relative;
+        bottom: -20px;
+    }
+    .site-header .header-info ul {
+        display: inline;
+    }
+    .site-header .header-info li {
+        padding: 9px 5px;
+    }
+    .hgroup-wrapper {
+        position: relative;
+        padding: 20px 0;
+        top: 0;
+    }
+    .banner-section .box-button {
+        margin-left: 34%;
+    }
+    .about-company-section .company-logo {
+       display: none;
+    }
+    .about-company-section .company-info {
+        width: 100%;
+        padding-left: 0;
+        text-align: justify;
+        
+    }
+    p {
+        text-align: justify;
+    }
+    .advertisement-section .advertisement-content-wrap {
+        max-width: 620px;
+    }
+    .built-section .built-content-wrap {
+        display: inline;
+    }
+    .built-content-wrap .entry-header {
+        width: 100%;
+        text-align: justify;
+        padding-right: 0px;
+    }
+    .industries-section {
+        padding: 7px 0;
+    }
+    .industries-item-wrap {
+        padding: 0;
+    }
+    .custom-col-4 {
+        width: 100%;
+    }
+    .info-content .info-item {
+        width: 100%;
+        padding: 15px 38px;
+    }
+    .contact-us-section .box-button {
+        margin-left: 10%;
+    }
+    .site-footer {
+        clip-path: ellipse(100% 75% at 34% 75%);
+        shape-outside: ellipse(95% 76% at 38% 76%);
+    }
+    .site-footer::before {
+        clip-path: ellipse(93% 76% at 41% 76%);
+        shape-outside: ellipse(81% 76% at 43% 76%);
+    }
+    .site-footer .widget-area div[class*="custom-col"] {
+        width: 50%;
+    }
+    .site-footer .widget-area div[class*="custom-col"]:first-child {
+        width: 50%;
+    }
+    .widget-area{
+        padding: 0%;
+    }
+
+
+}
+
+
+/* All Mobile size smaller than standard 479 (devices and browsers) */
+
+@media only screen and (max-width: 479px) {
+    h1.entry-title {
+        font-size: 22px;
+    }
+    .site-content section {
+        margin-bottom: 13px;
+    }
+    .banner-section {
+        padding: 49px 0 103px 0;
+    }
+    .banner-section .box-button {
+        margin-left: 25%;
+    }
+    
+    .about-company-section .about-company-wrapper {
+        padding-top: 5px;
+        padding-bottom: 14px;
+    }
+    
+    .built-image-wrap {
+        width: 100%;
+        height: 100%;
+        padding-top: 21px;
+    }
+    .advertisement-section {
+        opacity: 0.8;
+        padding: 45px 0;
+    }
+    .advertisement-section .entry-header {
+        background-color: beige;
+        opacity: 0.9;
+        padding: 16px;
+        margin-top: 5px;
+    }
+    h2.entry-title {
+        margin-top: 5px;
+    }
+    .innovation-section .info-box, .core-benefits-section .info-box {
+        padding: 10px 8px 3px 8px;
+    }
+    .info-content .info-item {
+        padding: 15px 6px;
+    }
+    .contact-us-section .info-icon {
+        width: 50px;
+    }
+    .contact-us-section .info-icon::before {
+        height: 60px;
+        width: 60px;
+        top: 8px;
+        left: -15px;
+    }
+    .contact-us-section .info-icon img {
+        width: 50px;
+    }
+    .contact-us-section .info-detail {
+        padding-top: 12px;
+    }
+    .contact-us-section .info-detail a {
+        font-size: 19px;
+    }
+    .contact-us-section .info-detail {
+    width: calc(100% - 74px);
+    padding-left: 22px;
+    padding-top: 12px;
+    }
+    .contact-us-section .box-button {
+        margin-left: 6%;
+    }
+    .site-footer {
+        clip-path: ellipse(176% 75% at 36% 75%);
+        shape-outside: ellipse(176% 75% at 36% 75%);
+        padding: 40px 0 0;
+    }
+    .site-footer::before {
+        clip-path: ellipse(175% 76% at 41% 76%);
+        shape-outside: ellipse(175% 76% at 41% 76%);
+    }
+    .site-footer .widget-area div[class*="custom-col"] {
+        width: 100%;
+        text-align: left;
+    }
+    .site-footer .widget-area div[class*="custom-col"]:first-child {
+        width: 100%;
+    }
+    .widget {
+        margin-bottom: 0px;
+    }
+    .site-footer .widget-title {
+        font-size: 25px;
+        margin-bottom: 32px;
+        text-decoration: underline;
+    }
+    .site-footer .widget-title::before {
+        display: none;
+    }
+    .site-footer .widget ul li {
+        margin-bottom: 10px;
+    }
+    .contact-detail-content {
+        padding-left: 5px;
+    }
+    .site-generator {
+        font-size: 12px;
+        padding: 10px 0 0px;
+    }
+    
+    
+}
+@media only screen and (max-width: 320px) {
+
+}

@@ -1,0 +1,75 @@
+/* Media Queries */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+/* All Tablet Portrait size smaller than standard 1023 (devices and browsers) */
+
+@media only screen and (max-width: 1023px) {
+    /* removing menu css in responsive */
+
+    .main-navigation ul ul {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform-origin: none;
+        transition: all 0s ease 0s;
+        -webkit-transition: all 0s ease 0s;
+        -moz-transition: all 0s ease 0s;
+        -o-transition: all 0s ease 0s;
+        margin: 0;
+        position: static;
+        top: 0px;
+        white-space: none;
+        z-index: 999;
+        background: #fff;
+        min-width: 100%;
+        box-shadow: none;
+    }
+
+    .main-navigation li li{
+        border-bottom: none;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    /* mean menu css */
+    .mean-container .meanmenu-reveal span, .mean-container .meanmenu-reveal span:before, .mean-container .meanmenu-reveal span:after{
+        background: #007FAC;
+    }
+    .mean-container .mean-nav>ul{
+        top: 85%;
+        left: 0;
+        background: rgb(9 70 107 / 80%) none repeat scroll 0 0;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .mean-container .mean-nav ul li a.mean-expand:hover {
+        background: none;
+    }
+    .mean-container .mean-nav ul li a.mean-expand.mean-clicked::before {
+        content: "";
+    }
+    .mean-container .mean-nav>ul>li:first-child a {
+        border-top: none;
+    }
+    .mean-container .mean-nav ul li {
+        margin: 0;
+    }
+    .main-navigation ul li:hover ul {
+        transform: unset;
+    }
+    .menu-item-has-children::before, .submenu-has-children::before{
+        display: none;
+        
+    }
+}

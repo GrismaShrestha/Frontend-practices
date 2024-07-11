@@ -1,0 +1,8 @@
+1. callback
+2. parameter
+3. argument
+4.promise(aysc await)
+5. OOP
+6. object
+7. array
+8. conctructor
